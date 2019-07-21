@@ -2,12 +2,12 @@
 // if a number is not divide by 12 print the rest of the number substracting -1
 var theNumber = 121;
 if (theNumber % 12 == 0) {
-    for (; theNumber > 0; theNumber = theNumber - 12) {
+    for (; theNumber >= 0; theNumber -= theNumber) {
         console.log(theNumber);
     }
 }
 else {
-    for (; theNumber > 0; theNumber = theNumber - 1) {
+    for (; theNumber >= 0; theNumber--) {
         console.log(theNumber);
     }
 }
